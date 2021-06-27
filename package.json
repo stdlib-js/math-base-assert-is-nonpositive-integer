@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-assert-is-nonpositive-integer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Test if a finite double-precision floating-point number is a nonpositive integer.",
   "license": "Apache-2.0",
   "author": {
