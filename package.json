@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/math-base-assert-is-nonpositive-integer",
+  "version": "0.0.0",
+  "description": "Test if a finite double-precision floating-point number is a nonpositive integer.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-assert-is-nonpositive-integer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "assertion",
+    "assert",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "math",
+    "mathematics",
+    "nonpositive",
+    "negative",
+    "integer",
+    "number",
+    "int",
+    "is",
+    "isinteger",
+    "isint",
+    "type",
+    "check",
+    "double",
+    "dbl"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
