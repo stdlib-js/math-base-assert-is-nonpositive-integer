@@ -35,38 +35,30 @@ limitations under the License.
 
 > Test if a finite [double-precision floating-point number][ieee754] is a nonpositive integer.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-assert-is-nonpositive-integer
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isNonPositiveInteger = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isNonPositiveInteger = require( 'path/to/vendor/umd/math-base-assert-is-nonpositive-integer/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isNonPositiveInteger;
-})();
-</script>
+var isNonPositiveInteger = require( '@stdlib/math-base-assert-is-nonpositive-integer' );
 ```
 
 #### isNonPositiveInteger( x )
@@ -126,13 +118,8 @@ bool = isNonPositiveInteger( 10.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var isNonPositiveInteger = require( '@stdlib/math-base-assert-is-nonpositive-integer' );
 
 var bool = isNonPositiveInteger( -5.0 );
 // returns true
@@ -148,11 +135,6 @@ bool = isNonPositiveInteger( -3.14 );
 
 bool = isNonPositiveInteger( NaN );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -215,8 +197,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-assert-is-nonpositive-integer.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-assert-is-nonpositive-integer
 
-[test-image]: https://github.com/stdlib-js/math-base-assert-is-nonpositive-integer/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/math-base-assert-is-nonpositive-integer/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/math-base-assert-is-nonpositive-integer/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/math-base-assert-is-nonpositive-integer/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-assert-is-nonpositive-integer/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-base-assert-is-nonpositive-integer?branch=main
@@ -249,13 +231,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/assert/is-integer]: https://github.com/stdlib-js/math-base-assert-is-integer/tree/umd
+[@stdlib/math/base/assert/is-integer]: https://github.com/stdlib-js/math-base-assert-is-integer
 
-[@stdlib/math/base/assert/is-negative-integer]: https://github.com/stdlib-js/math-base-assert-is-negative-integer/tree/umd
+[@stdlib/math/base/assert/is-negative-integer]: https://github.com/stdlib-js/math-base-assert-is-negative-integer
 
-[@stdlib/math/base/assert/is-nonnegative-integer]: https://github.com/stdlib-js/math-base-assert-is-nonnegative-integer/tree/umd
+[@stdlib/math/base/assert/is-nonnegative-integer]: https://github.com/stdlib-js/math-base-assert-is-nonnegative-integer
 
-[@stdlib/math/base/assert/is-positive-integer]: https://github.com/stdlib-js/math-base-assert-is-positive-integer/tree/umd
+[@stdlib/math/base/assert/is-positive-integer]: https://github.com/stdlib-js/math-base-assert-is-positive-integer
 
 <!-- </related-links> -->
 
