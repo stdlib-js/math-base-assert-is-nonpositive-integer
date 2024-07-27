@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isNonPositiveInteger from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-assert-is-nonpositive-integer/tags). For example,
+
+```javascript
 import isNonPositiveInteger from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@v0.2.0-esm/index.mjs';
 ```
 
@@ -108,7 +113,7 @@ bool = isNonPositiveInteger( 10.0 );
 <body>
 <script type="module">
 
-import isNonPositiveInteger from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@v0.2.0-esm/index.mjs';
+import isNonPositiveInteger from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@esm/index.mjs';
 
 var bool = isNonPositiveInteger( -5.0 );
 // returns true
