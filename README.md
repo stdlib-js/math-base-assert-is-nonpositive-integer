@@ -35,32 +35,14 @@ limitations under the License.
 
 > Test if a finite [double-precision floating-point number][ieee754] is a nonpositive integer.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-assert-is-nonpositive-integer
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isNonPositiveInteger = require( '@stdlib/math-base-assert-is-nonpositive-integer' );
+import isNonPositiveInteger from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@deno/mod.js';
 ```
 
 #### isNonPositiveInteger( x )
@@ -121,7 +103,7 @@ bool = isNonPositiveInteger( 10.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var isNonPositiveInteger = require( '@stdlib/math-base-assert-is-nonpositive-integer' );
+import isNonPositiveInteger from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nonpositive-integer@deno/mod.js';
 
 var bool = isNonPositiveInteger( -5.0 );
 // returns true
@@ -145,94 +127,7 @@ bool = isNonPositiveInteger( NaN );
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/assert/is_nonpositive_integer.h"
-```
-
-#### stdlib_base_is_nonpositive_integer( x )
-
-Tests if a finite double-precision floating-point number is a nonpositive integer.
-
-```c
-#include <stdbool.h>
-
-bool out = stdlib_base_is_nonpositive_integer( -5.0 );
-// returns true
-
-out = stdlib_base_is_nonpositive_integer( 0.0 );
-// returns true
-```
-
-The function accepts the following arguments:
-
--   **x**: `[in] double` input value.
-
-```c
-bool stdlib_base_is_nonpositive_integer( const double x );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/assert/is_nonpositive_integer.h"
-#include <stdio.h>
-#include <stdbool.h>
-
-int main( void ) {
-    const double x[] = { 5.0, -5.0, 3.14, -3.14, 0.0, 0.0/0.0 };
-
-    bool b;
-    int i;
-    for ( i = 0; i < 6; i++ ) {
-        b = stdlib_base_is_nonpositive_integer( x[ i ] );
-        printf( "x = %lf, is_nonpositive_integer(x) = %s\n", x[ i ], ( b ) ? "True" : "False" );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -260,7 +155,7 @@ int main( void ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -320,13 +215,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/assert/is-integer]: https://github.com/stdlib-js/math-base-assert-is-integer
+[@stdlib/math/base/assert/is-integer]: https://github.com/stdlib-js/math-base-assert-is-integer/tree/deno
 
-[@stdlib/math/base/assert/is-negative-integer]: https://github.com/stdlib-js/math-base-assert-is-negative-integer
+[@stdlib/math/base/assert/is-negative-integer]: https://github.com/stdlib-js/math-base-assert-is-negative-integer/tree/deno
 
-[@stdlib/math/base/assert/is-nonnegative-integer]: https://github.com/stdlib-js/math-base-assert-is-nonnegative-integer
+[@stdlib/math/base/assert/is-nonnegative-integer]: https://github.com/stdlib-js/math-base-assert-is-nonnegative-integer/tree/deno
 
-[@stdlib/math/base/assert/is-positive-integer]: https://github.com/stdlib-js/math-base-assert-is-positive-integer
+[@stdlib/math/base/assert/is-positive-integer]: https://github.com/stdlib-js/math-base-assert-is-positive-integer/tree/deno
 
 <!-- </related-links> -->
 
