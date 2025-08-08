@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2018 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,22 +16,38 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/assert/is_nonpositive_integer.h"
-#include "stdlib/math/base/special/floor.h"
-#include <stdbool.h>
+'use strict';
+
+// MODULES //
+
+var floor = require( '@stdlib/math-base-special-floor' );
+
+
+// MAIN //
 
 /**
 * Tests if a finite double-precision floating-point number is a nonpositive integer.
 *
-* @param x    input value
-* @return     output value
+* @param {number} x - value to test
+* @returns {boolean} boolean indicating whether the value is a nonpositive integer
 *
 * @example
-* #include <stdbool.h>
+* var bool = isNonPositiveInteger( -1.0 );
+* // returns true
 *
-* bool out = stdlib_base_is_nonpositive_integer( 3.0 );
+* @example
+* var bool = isNonPositiveInteger( 0.0 );
+* // returns true
+*
+* @example
+* var bool = isNonPositiveInteger( 10.0 );
 * // returns false
 */
-bool stdlib_base_is_nonpositive_integer( const double x ) {
-	return ( stdlib_base_floor( x ) == x && x <= 0 );
+function isNonPositiveInteger( x ) {
+	return (floor(x) === x && x <= 0);
 }
+
+
+// EXPORTS //
+
+module.exports = isNonPositiveInteger;

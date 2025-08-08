@@ -16,22 +16,36 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/assert/is_nonpositive_integer.h"
-#include "stdlib/math/base/special/floor.h"
-#include <stdbool.h>
+'use strict';
+
+// MODULES //
+
+var Boolean = require( '@stdlib/boolean-ctor' );
+var addon = require( './../src/addon.node' );
+
+
+// MAIN //
 
 /**
 * Tests if a finite double-precision floating-point number is a nonpositive integer.
 *
-* @param x    input value
-* @return     output value
+* @private
+* @param {number} x - value to test
+* @returns {boolean} boolean indicating whether the number is nonpositive integer
 *
 * @example
-* #include <stdbool.h>
+* var bool = isNonPositiveInteger( -2.0 );
+* // returns true
 *
-* bool out = stdlib_base_is_nonpositive_integer( 3.0 );
+* @example
+* var bool = isNonPositiveInteger( 5.0 );
 * // returns false
 */
-bool stdlib_base_is_nonpositive_integer( const double x ) {
-	return ( stdlib_base_floor( x ) == x && x <= 0 );
+function isNonPositiveInteger( x ) {
+	return Boolean( addon( x ) );
 }
+
+
+// EXPORTS //
+
+module.exports = isNonPositiveInteger;
